@@ -1,0 +1,38 @@
+$blue: #3bbfce;
+$margin: 16px;
+
+$valor : 3;
+
+p{
+	@if $valor == 3 { border: 1px solid; }
+	@if $valor>3   { border: 2 px dotted; }
+	@if $valor == null         { border: 4px dashed;}
+}
+
+
+.content-navigation {
+  border-color: $blue;
+  color:
+    darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+
+table.hl {
+  margin: 2em 0;
+  td.ln {
+    text-align: right;
+  }
+}
+
+li {
+  font: {
+    family: serif;
+    weight: bold;
+    size: 1.2em;
+  }
+}
